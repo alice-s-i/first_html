@@ -5,21 +5,25 @@
         <meta name="author" content="alisakva">
         <meta name="description" content="Best Website Award 2005">
         <title>my first webpage</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
         <!--у меня так и не получилось сделать иконку, хотя файл с картинкой в той же папке-->
         <link rel="icon" href="html5.png" type="image/x-icon">
         <link rel="stylesheet" href="main.css" type="text/css">
     </head>
     <body>
+        <header>
         <!--<h1 style="text-align:center"> Vika privet!🦖</h1>-->
-        <h1 style="text-align: center;
-        background: linear-gradient(277deg, rgba(2,0,36,1) 0%, rgba(215,207,29,0.7) 39%, rgba(0,212,255,1) 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;"> Vika privet!🦖</h1>
+        <h1>🦎   🦎   🦎   🦖   Vika privet!   🦖   🦎   🦎   🦎   </h1>
 
         <hr>
 
+        <h2>NAVIGATION</h2>
         <nav>
             <ul>
+                <!--
                 <li>
                     <a href="#introduction">Introduction</a>
                 </li>
@@ -28,10 +32,16 @@
                 </li>
                 <li>
                     <a href="#places">Places I wanna visit</a>
+                </li> -->
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="about.html">about author</a>
                 </li>
             </ul>
         </nav>
-
+    </header>
         <section id="introduction">
         <h2>This is your sister <a href="about.html">Alisa</a></h2>
         <p>this is my first webpage.</p>
@@ -50,8 +60,7 @@
         <!-- letsgoooo -->
         <section id="song">
         <h2>here are some lyrics:</h2>
-        <p style="background: linear-gradient(277deg, rgb(10, 7, 66) 0%, rgba(215, 187, 29, 0.7) 39%, rgb(174, 14, 14) 100%);-webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;">You woke up this morning
+        <p class="soprano">You woke up this morning
             <br>Got yourself a gun
             <br>Your mama always said you'd be the chosen one
             <br>he said, you're one in a million
@@ -67,24 +76,36 @@
         <h3>places i'd like to visit:</h3>
         <ul>
             <li>Stockholm
-                <p>Jag vill verkligen åka till Stockholm, Sverige eftersom det är en plats där jag skulle vilja bo en dag</p>
+                <p><abbr title="I really want to go to Stockholm, Sweden because it's a place where I'd like to live one day">Jag vill verkligen åka till Stockholm, Sverige eftersom det är en plats där jag skulle vilja bo en dag</abbr></p>
             </li>
             <li>Brussels
-                <p>Je ne vais pas mentir, la seule raison pour laquelle je veux aller en Belgique, c'est Stromae.</p>
+                <p><abbr title="Not gonna lie, the only reason I want to go to Belgium is Stromae.">Je ne vais pas mentir, la seule raison pour laquelle je veux aller en Belgique, c'est Stromae.</abbr></p>
             </li>
             <li>Yaroslavl
                 <p>зубы надо проверять + делать чистку!</p>
             </li>
         </ul>
+        <hr>
+        <p class="reversed">нет спасибо я не голодный</p>
+        <hr>
 
         </section>
 
         <p>thanks for visiting <strong>alisa.com</strong></p>
-        <h1 style="color: rgb(121, 255, 206);
-        background: linear-gradient(277deg, rgba(2,0,36,1) 0%, rgba(36, 3, 33, 0.7) 39%, rgb(100, 59, 16) 100%);">⬇️read more about the author⬇️</h1>
+        <!--
+        <h2 class="undrl">⬇️read more about the author⬇️</h1>
 
         <hr>
-        <h3 style="color: rgb(250, 183, 183);"> <a href="about.html"><strong>©alisik26</strong></a></h3>
+        <h3> <a href="about.html"><strong>©alisik26</strong></a></h3> -->
+
+        <ul class="nav">
+            <li><a href="about.html">about us</a></li>
+            <li><a href="faq.html">faq</a></li>
+            <li><a href="https://linktr.ee/dozhitdo18">podcast</a></li>
+            <li><a href="https://t.me/hesgone">meme page</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=OLAK5uy_n78ploXx-gSUGsEZxW3FW-n1nOMuncfiE">stromae</a></li>
+        </ul>
+
         <p>
             <a href="#">back to top</a>
         </p>
