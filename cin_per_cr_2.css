@@ -1,0 +1,80 @@
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    /* color: #0B0F29; */
+    color: #9E9D40;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255)
+  
+  }
+
+.container {
+    margin: 0 auto;
+    width: 60%;
+    display: grid;
+    grid-template-areas:
+        'gallery ing ing '
+        'howto howto howto ';
+    row-gap: 10px;
+    column-gap: 50px;
+    /*border: 1px solid red;*/
+}
+/* это кнопки влево вправо */
+.image-wrapper {
+    grid-area: gallery;
+    display: flex;
+    justify-content: flex-start; /*maybe center*/
+    /* border: 2px solid green; */
+    position: relative;
+}
+.image-wrapper > button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: white;
+    position: absolute;
+    top: calc(50% - 20px);
+}
+.image-wrapper > button.prev {
+    left: 0;
+}
+.image-wrapper > button.next {
+    right: 0;
+}
+
+.image {
+    width: 100%;
+    object-fit: cover;
+    border: 5px solid #E3E1DC;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.ingredients {
+    grid-area: ing;
+    background-color: rgb(239, 239, 239);
+    opacity: 90%;
+    padding: 10px;
+    border-radius: 25px;
+    /*border: 1px solid grey;*/
+}
+
+.howto {
+    grid-area: howto;
+    background-color: rgb(239, 239, 239);
+    opacity: 90%;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+
+@media screen and (max-width: 768px) {
+    /* for mobile */
+    .container {
+        width: 90%;
+        grid-template-areas:
+            'gallery'
+            'ing'
+            'howto';
+    }
+}
+
